@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0edaaabe3f8e1e305f1f030b87f1e3c015d6431b
 #include "main.h"
 
 /****************** PRINT POINTER ******************/
@@ -186,3 +190,9 @@ int print_rot13string(va_list types, char buffer[],
 	}
 	return (count);
 }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 0edaaabe3f8e1e305f1f030b87f1e3c015d6431b
