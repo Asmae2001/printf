@@ -1,14 +1,49 @@
 #include "main.h"
 
+<<<<<<< HEAD
+=======
 void print_buffer(char buffer[], int *buff_ind);
 
+>>>>>>> c574df603ca26779fd9cdb7155ae3c9e14510638
 /**
- * _printf - Printf function
- * @format: format.
- * Return: Printed chars.
+ * _printf - Receives the main string and all the necessary parameters to
+ * print a formated string
+ * @format: A string containing all the desired characters
+ * Return: A total count of the characters printed
  */
+
 int _printf(const char *format, ...)
 {
+<<<<<<< HEAD
+	int printed_chars;
+	conver_t f_list[] = {
+		{"%", print_percent},
+		{"d", print_integer},
+		{"i", print_integer},
+		{"c", print_char},
+		{"s", print_string},
+		{"b", print_binary},
+		{"u", print_unsigned_integer},
+		{"o", print_octal},
+		{"x", print_hex},
+		{"X", print_HEX},
+		{"S", print_String},
+		{"p", print_pointer},
+		{"r", print_rev},
+		{"R", print_rot13},
+		{NULL, NULL},
+	};
+	va_list arg_list;
+
+	if (format == NULL)
+		return (-1);
+
+	va_start(arg_list, format);
+	printed_chars = format_reciever(format, f_list, arg_list);
+	va_end(arg_list);
+	return (printed_chars);
+}
+=======
 	int i, printed = 0, printed_chars = 0;
 	int flags, width, precision, size, buff_ind = 0;
 	va_list list;
@@ -66,3 +101,4 @@ void print_buffer(char buffer[], int *buff_ind)
 }
 
 
+>>>>>>> c574df603ca26779fd9cdb7155ae3c9e14510638
